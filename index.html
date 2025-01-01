@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Shop</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+
+      .card {
+        height: 100%;
+        max-width: 300px;
+      }
+
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .card img {
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .menu-section {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="bg-danger text-white text-center py-4">
+      <h1>Welcome to Bj $ilog Meals!</h1>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section id="menu" class="my-5">
+        <h2 class="text-center">Our Delicious Menu</h2>
+
+        <h3>SILOG</h3>
+        <div class="menu-section mb-4">
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="card mb-4">
+              <img
+                src="https://thebakeologie.com/wp-content/uploads/2018/11/BeefTapa-1.jpg"
+                class="card-img-top"
+                alt="Tapsilog" />
+              <div class="card-body">
+                <h5 class="card-title">Tapsilog</h5>
+                <p class="card-text">Beef tapa with garlic rice and egg.</p>
+                <p class="price font-weight-bold">₱450.00</p>
+                <button
+                  class="btn btn-danger"
+                  data-toggle="modal"
+                  data-target="#buyModal">
+                  Buy
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="card mb-4">
+              <img
+                src="https://www.ajinomoto.com.ph/web/wp-content/uploads/2021/02/longsilog-2.jpg"
+                class="card-img-top"
+                alt="Longsilog" />
+              <div class="card-body">
+                <h5 class="card-title">Longsilog</h5>
+                <p class="card-text">
+                  Sweet pork longganisa with rice and egg.
+                </p>
+                <p class="price font-weight-bold">₱420.00</p>
+                <button
+                  class="btn btn-danger"
+                  data-toggle="modal"
+                  data-target="#buyModal">
+                  Buy
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="card mb-4">
+              <img
+                src="https://tse2.mm.bing.net/th?id=OIP.4sqGp2XUNOs20Fo0mSZUWAHaE9&pid=Api&P=0&h=220"
+                class="card-img-top"
+                alt="Tocilog" />
+              <div class="card-body">
+                <h5 class="card-title">Tocilog</h5>
+                <p class="card-text">
+                  Crispy tocino with garlic rice and sunny-side-up egg.
+                </p>
+                <p class="price font-weight-bold">₱450.00</p>
+                <button
+                  class="btn btn-danger"
+                  data-toggle="modal"
+                  data-target="#buyModal">
+                  Buy
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3>SHORT ORDER</h3>
+        <div class="menu-section mb-4">
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="card mb-4">
+              <img
+                src="https://tse1.mm.bing.net/th?id=OIP.hUcHFHJ-772v6xpbtvQksQHaEK&pid=Api&P=0&h=220"
+                class="card-img-top"
+                alt="Pancit Canton" />
+              <div class="card-body">
+                <h5 class="card-title">Pancit Canton</h5>
+                <p class="card-text">
+                  Stir-fried noodles with vegetables and meat.
+                </p>
+                <p class="price font-weight-bold">₱350.00</p>
+                <button
+                  class="btn btn-danger"
+                  data-toggle="modal"
+                  data-target="#buyModal">
+                  Buy
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="card mb-4">
+              <img
+                src="https://tse3.mm.bing.net/th?id=OIP.9nc4ai8nF6I8xGM_bpgMIgHaHa&pid=Api&P=0&h=220"
+                class="card-img-top"
+                alt="Adobo Rice" />
+              <div class="card-body">
+                <h5 class="card-title">Adobo Rice</h5>
+                <p class="card-text">
+                  Flavorful rice cooked with chicken adobo.
+                </p>
+                <p class="price font-weight-bold">₱300.00</p>
+                <button
+                  class="btn btn-danger"
+                  data-toggle="modal"
+                  data-target="#buyModal">
+                  Buy
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="card mb-4">
+              <img
+                src="https://tse1.mm.bing.net/th?id=OIP.47Fzu6LGWzjYbALoBWR9xQHaFU&pid=Api&P=0&h=220"
+                class="card-img-top"
+                alt="Sisig" />
+              <div class="card-body">
+                <h5 class="card-title">Sisig</h5>
+                <p class="card-text">
+                  Sizzling pork sisig served with a lemon.
+                </p>
+                <p class="price font-weight-bold">₱500.00</p>
+                <button
+                  class="btn btn-danger"
+                  data-toggle="modal"
+                  data-target="#buyModal">
+                  Buy
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3>EXTRA</h3>
+        <div class="menu-section mb-4">
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="card mb-4">
+              <img
+                src="https://tse2.mm.bing.net/th?id=OIP.FBCNh4Ogc77uBlz297rBEAHaHa&pid=Api&P=0&h=220"
+                class="card-img-top"
+                alt="Extra Rice" />
+              <div class="card-body">
+                <h5 class="card-title">Extra Rice</h5>
+                <p class="card-text">Delicious garlic rice.</p>
+                <p class="price font-weight-bold">₱50.00</p>
+                <button
+                  class="btn btn-danger"
+                  data-toggle="modal"
+                  data-target="#buyModal">
+                  Buy
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="card mb-4">
+              <img
+                src="https://www.fodors.com/wp-content/uploads/2019/03/HERO_Worlds_Best_Soda_Bundaberg_shutterstock_679079920.jpg"
+                class="card-img-top"
+                alt="Soda" />
+              <div class="card-body">
+                <h5 class="card-title">Soda</h5>
+                <p class="card-text">Choose from a variety of soft drinks.</p>
+                <p class="price font-weight-bold">₱30.00</p>
+                <button
+                  class="btn btn-danger"
+                  data-toggle="modal"
+                  data-target="#buyModal">
+                  Buy
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex justify-content-center">
+            <div class="card mb-4">
+              <img
+                src="https://tse2.mm.bing.net/th?id=OIP.d4U7dnSPh_9pAd9pqrxFygHaD4&pid=Api&P=0&h=220"
+                alt="Chips" />
+              <div class="card-body">
+                <h5 class="card-title">Chips</h5>
+                <p class="card-text">Crunchy potato chips.</p>
+                <p class="price font-weight-bold">₱20.00</p>
+                <button
+                  class="btn btn-danger"
+                  data-toggle="modal"
+                  data-target="#buyModal">
+                  Buy
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-danger text-white text-center py-3">
+      <p>© 2023 Food Shop. All rights reserved.</p>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="buyModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">Order Form</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="quantity">Quantity</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="quantity"
+                  placeholder="Enter quantity"
+                  required />
+              </div>
+              <div class="form-group">
+                <label for="extraRice">Extra Rice</label>
+                <select class="form-control" id="extraRice">
+                  <option value="no">No</option>
+                  <option value="yes">Yes</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="address">Address</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="address"
+                  placeholder="Enter your address"
+                  required />
+              </div>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Enter your name"
+                  required />
+              </div>
+              <div class="form-group">
+                <label for="contact">Contact Number</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="contact"
+                  placeholder="Enter your contact number"
+                  required />
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Submit Order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
